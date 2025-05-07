@@ -1,0 +1,32 @@
+# Clone the primary repository
+git clone https://github.com/CarlDeanClineSr/LUFT-Unified-Field-Project.git
+
+# Clone the other repositories
+git clone https://github.com/CarlDeanClineSr/Lattice-Unified-Field-Theory-L.U.F.T.git
+git clone https://github.com/CarlDeanClineSr/Chronological-Craft-Inventions-LUFT.git
+git clone https://github.com/CarlDeanClineSr/CarlDean-ClineSr2.git
+cd LUFT-Unified-Field-Project
+# Add Lattice-Unified-Field-Theory-L.U.F.T
+git remote add luft-theory ../Lattice-Unified-Field-Theory-L.U.F.T
+git fetch luft-theory
+git subtree add --prefix=research luft-theory main --squash
+
+# Add Chronological-Craft-Inventions-LUFT
+git remote add luft-craft ../Chronological-Craft-Inventions-LUFT
+git fetch luft-craft
+git subtree add --prefix=notebooks luft-craft main --squash
+
+# Add CarlDean-ClineSr2
+git remote add luft-experiments ../CarlDean-ClineSr2
+git fetch luft-experiments
+git subtree add --prefix=experimental luft-experiments main --squash
+# Create folders if they don’t already exist
+mkdir docs src data notebooks research experimental
+
+# Move files into their appropriate folders
+mv research/*.* research/
+mv notebooks/*.* notebooks/
+mv experimental/*.* experimental/
+git add .
+git commit -m "Merged repositories and organized structure"
+git push origin main

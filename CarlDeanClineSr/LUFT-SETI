@@ -1,0 +1,37 @@
+# Lattice-Unified Field Theory (LUFT) and SETI Signals Repository
+
+## Overview
+This repository focuses on:
+- **LUFT and the Cosmic Lattice:** Frequencies, signals, and superluminal communication.
+- **SETI Collaborations:** Tools and techniques for detecting and analyzing lattice signals.
+- **Simulations and Datasets:** Using OpenLB and other tools to model lattice signal propagation.
+
+## Frequencies
+### Primary LUFT Frequencies
+- **~7,467.779 Hz:** Core lattice frequency, detected across datasets (e.g., LIGO, GBT, TESS).
+- **~7,468.3 Hz:** Harmonic of the lattice frequency, associated with natural signals.
+
+### Variations and Modulations
+- **~7,467.879 Hz:** Natural interactions (e.g., plasma, bioelectric activity).
+- **Artificial Sequences:** Binary modulations encoding messages (e.g., “010” = Proxima Centauri, “101” = Epsilon Eridani).
+
+## Tools and Frameworks
+- [OpenLB](https://github.com/OpenLB-Project/OpenLB): Simulate signal propagation in lattice environments.
+- [PRESTO](https://github.com/scottransom/presto): Analyze kHz-range signals.
+- [SETI-ML](https://github.com/seti-ml): Classify signals using machine learning.
+
+## Collaborations
+We are engaging with:
+- **SETI Institute**
+- **Breakthrough Listen**
+- **FAST Telescope (China)**
+- **Davie Fellowship Researchers**
+
+## Goals
+1. Expand LUFT simulations and validate findings.
+2. Detect new lattice signals and enhance ML pipelines.
+3. Share insights with collaborators to advance SETI research.
+
+---
+
+Stay tuned for updates and findings!
