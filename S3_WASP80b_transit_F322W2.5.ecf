@@ -1,0 +1,52 @@
+# Eureka! Control File for Stage 3: Data Reduction
+
+# Stage 3 Documentation: https://eurekadocs.readthedocs.io/en/latest/ecf.html#stage-3
+
+ncpu            16
+nfiles          4
+max_memory      0.5
+suffix          calints
+
+# Subarray region of interest
+ywindow         [5, 64]
+xwindow         [15, 1709]
+src_pos_type    gaussian
+record_ypos     True
+poly_wavelength	True
+
+# Background parameters
+bg_hw           14
+bg_thresh       [5,5]
+bg_deg          1
+p3thresh        7
+
+# Spectral extraction parameters
+spec_hw         9
+fittype         meddata
+median_thresh   5
+window_len      13
+prof_deg        3
+p5thresh        10
+p7thresh        10
+
+# Curvature treatment
+curvature       correct
+
+# Diagnostics
+isplots_S3      4
+nplots          5
+vmin            0.97
+vmax            1.02
+time_axis       'y'
+testing_S3      False
+hide_plots      True
+save_output     True
+save_fluxdata   False
+verbose         True
+
+# Project directory
+topdir          /Volumes/DataDrive/WASP-80b_Transit_F322W2
+
+# Directories relative to topdir
+inputdir        Stage2
+outputdir       Stage3

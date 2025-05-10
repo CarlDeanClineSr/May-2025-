@@ -1,0 +1,39 @@
+# Eureka! Control File for Stage 1: Detector Processing
+
+# Stage 1 Documentation: https://eurekadocs.readthedocs.io/en/latest/ecf.html#stage-1
+
+suffix              nrcalong_uncal
+
+# Control ramp fitting method
+ramp_fit_algorithm  'default'
+ramp_fit_max_cores  'half'
+
+# Pipeline stages
+skip_group_scale    False
+skip_dq_init        False
+skip_saturation     False
+skip_ipc            True
+skip_superbias      False
+skip_refpix         False
+skip_linearity      False
+skip_persistence    True
+skip_dark_current   False
+skip_jump           False
+skip_ramp_fitting   False
+skip_gain_scale     False
+
+#Pipeline stages parameters
+jump_rejection_threshold  6.0
+
+# Project directory
+topdir              /Volumes/DataDrive/WASP-80b_Transit_F322W2
+
+# Directories relative to topdir
+inputdir            Uncalibrated	
+outputdir           Stage1
+
+# Diagnostics
+testing_S1          False
+
+# "Default" ramp fitting settings
+default_ramp_fit_weighting          default

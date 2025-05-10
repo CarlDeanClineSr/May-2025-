@@ -1,0 +1,44 @@
+# Eureka! Control File for Stage 2: Data Reduction
+
+# Stage 2 Documentation: https://eurekadocs.readthedocs.io/en/latest/ecf.html#stage-2
+
+suffix                  rateints     # Data file suffix
+
+# Controls the cross-dispersion extraction
+slit_y_low              None
+slit_y_high             None
+
+# Modify the existing file to change the dispersion extraction
+waverange_start         None
+waverange_end           None
+
+# Note: different instruments and modes will use different steps by default
+skip_bkg_subtract       False
+skip_imprint_subtract   True
+skip_msa_flagging       True
+skip_extract_2d         False
+skip_srctype            True
+skip_master_background  True
+skip_wavecorr           True
+skip_flat_field         False
+skip_straylight         True
+skip_fringe             True
+skip_pathloss           True
+skip_barshadow          True
+skip_photom             True
+skip_resample           True
+skip_cube_build         True
+skip_extract_1d         True
+
+# Diagnostics
+testing_S2              False
+hide_plots              True
+
+# Project directory
+topdir                  /Volumes/DataDrive/WASP-80b_Eclipse_F322W2
+
+# Directories relative to topdir
+inputdir		Stage1
+outputdir               Stage2
+
+

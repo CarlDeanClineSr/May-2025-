@@ -1,0 +1,29 @@
+# Eureka! Control File for Stage 6: Spectra Plotting
+
+# Stage 6 Documentation: https://eurekadocs.readthedocs.io/en/latest/ecf.html#stage-6
+
+allapers        False
+
+# Plotting parameters
+y_params        ['rp', 'rp^2', 'c0', 'c1', 'u1', 'u2', 'ypos', 'ywidth', 'scatter_mult']
+y_labels        None
+y_label_units   None
+y_scalars       [1, 100, 1, 1, 1, 1, 1, 1, 1]
+x_unit          um
+
+# Tabulating parameters
+ncol            4
+
+# Diagnostics
+isplots_S6      3
+hide_plots      True
+
+# Project directory
+topdir          /Volumes/DataDrive/WASP-80b_Transit_F322W2
+
+# Model to plot underneath the fitted data points
+model_spectrum  None
+
+# Directories relative to topdir
+inputdir        Stage5
+outputdir       Stage6

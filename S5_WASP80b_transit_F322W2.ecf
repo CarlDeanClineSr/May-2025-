@@ -1,0 +1,37 @@
+# Eureka! Control File for Stage 5: Lightcurve Fitting
+
+# Stage 5 Documentation: https://eurekadocs.readthedocs.io/en/latest/ecf.html#stage-5
+
+ncpu            2
+
+allapers        False
+rescale_err     False
+fit_par         ./S5_WASP80b_transit_F322W2_fitpar.epf
+verbose         True
+use_generate_ld None
+ld_file         None
+
+fit_method      [nuts]
+run_myfuncs     [starry, polynomial, ypos, ywidth]
+
+# NUTS Parameters
+tune            3000
+draws           1000
+chains          2
+target_accept   0.85
+
+# Plotting controls
+interp          False
+
+# Diagnostics
+isplots_S5      5
+testing_S5      False
+testing_model   False
+hide_plots      True
+
+# Project directory
+topdir          /Volumes/DataDrive/WASP-80b_Transit_F322W2
+
+# Directories relative to topdir
+inputdir	Stage4
+outputdir       Stage5

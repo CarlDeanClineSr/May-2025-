@@ -1,0 +1,31 @@
+# Name      Value                Free?         PriorPar1    PriorPar2  PriorType
+#-------------------------------------------------------------------------------------------------------
+rp          0.1721266326108692	'fixed'
+fp          1700e-6             'free'         2500e-6      5000e-6    N
+# ------------------
+# Orbital parameters
+# ------------------
+per         3.0678519193213623  'fixed'
+t0          56486.92500631409   'fixed'
+time_offset 0                   'fixed'
+inc         88.89016426441333	'fixed'
+a           12.612265236235096	'fixed'
+ecc         0                   'fixed'
+w           90.                 'fixed'
+# --------------------
+# Systematic variables
+# --------------------
+c0          0.998               'free'         0.998        0.01        N
+c1          0.0                 'free'         0.0          0.01        N
+# Centroid decorrelation parameters
+ypos        -0.006              'free'         0.006        0.02        N
+ywidth      0.02                'free'         0.006        0.02        N
+# -----------
+# White noise
+# -----------
+scatter_mult 1.2                'free'         4            3           N
+# ---------------------------------------
+# Light travel time correction parameters
+# ---------------------------------------
+Rs          0.586               'independent'
+Ms          0.577               'independent'
